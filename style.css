@@ -1,4 +1,4 @@
-@media (max-width: 540px) {
+/*@media (max-width: 540px) {
 	.feedback_small {
 		width: 330px;
 	}
@@ -173,6 +173,63 @@
 		bottom: -380px;
 		padding: 110px 125px;
 	}
+}*/
+@media (max-width: 767px) {
+	.menu__list-item {
+		display: block;
+  		border-bottom: 1px solid #ccc;
+  		padding: .5em 10px;
+  		text-align: center;
+  		margin: 0;
+  		margin-left: auto;
+  		margin-right: auto;
+  		padding-left: 0;
+  		padding-right: 0;
+	}
+}
+@media (min-width: 768px) {
+	.container {
+    	width: 750px;
+    }
+    .col-4, .col-8 {
+    	float: left;
+    }
+	.col-4 {
+		width: 33.3333%;
+	}
+	.col-8 {
+		width: 66.6667%;
+	}
+	.menu__list-item {
+		display: inline-block;
+		padding: 0 5px;
+	}
+}
+@media (max-width: 991px) {
+	.menu__list-item {
+		padding: 0 5px;
+	}
+}
+@media (min-width: 992px) {
+	.menu {
+		float: right;
+	}
+	.menu__list-item {
+		padding: 0 15px;
+	}
+	.container {
+    	width: 970px;
+	}
+}
+@media (max-width: 1199px) {
+	.menu__list-item {
+		font-size: 12px;
+	}
+}
+@media (min-width: 1200px) {
+	.container {
+    	width: 1170px;
+	}
 }
 html, body {
 	height: 100%;
@@ -193,10 +250,14 @@ a {
 	margin: 35px auto 0;
 	overflow: hidden;
 }
+.col-4, .col-8 {
+    min-height: 1px;
+}
 .logo {
 	width: 212px;
 	height: 45px;
 	background: url(img/logo.png);
+	margin: 0 auto;
 }
 .menu {
 	font-family: 'Roboto Slab', serif;
@@ -211,7 +272,6 @@ a {
 .menu__list-item {
 	list-style: none;
 	line-height: 34px;
-	padding: 0 15px;
 }
 .menu__list-item:hover {
 	background: #9b242d;
@@ -221,9 +281,35 @@ a {
 .feedback {
 	overflow: hidden;
 	max-height: 633px;
-	padding-top: 30px;
+	margin-top: 30px;
+	position: relative;
+	width: 100%;
 }
-.feedback__left {
+.feedback__signup {
+	position: relative;
+	background: #46a651;
+	text-align: right;
+	box-sizing: border-box;
+	padding: 60px;
+	z-index: 9;
+}
+.feedback__signup:before {
+	content:'';
+}
+.feedback__signup-background {
+	position: absolute;
+	width: 66.6667%;
+	bottom: 0;
+	left: 0;
+}
+.feedback__facebook-background {
+	position: absolute;
+	width: 33.3333%;
+	height: 100%;
+	right: 0;
+	top: 0;
+}
+/*.feedback__left {
 	width: 66.3%;
 	position: relative;
 	float: left;
@@ -237,7 +323,7 @@ a {
 	position: relative;
 	float: left;
 	max-height: 100%;
-}
+}*/
 .signup__headline {
 	font-family: 'Roboto Slab';
 	font-weight: bold;
@@ -316,6 +402,20 @@ a {
 	color: #fff;
 	font-size: 16px;
 	margin-bottom: 20px;
+}
+.feedback__facebook {
+	width: 320px;
+	height: 320px;
+	display: block;
+	background: #3b5997;
+	color: #fff;
+	cursor: pointer;
+	padding: 90px 0;
+	box-sizing: border-box;
+	text-align: center;
+	margin-top: 295px;
+	position: relative;
+	z-index: 9;
 }
 .facebook-logo {
 	font-size: 80px;

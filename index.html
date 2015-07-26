@@ -31,36 +31,62 @@
 <body>
 	<div class="wrapper">
 		<div class="container">
-			<a href="/">
-				<div class="logo"></div>
-			</a>
-			<nav class="menu">
-				<ul class="menu__list">
-					<li class="menu__list-item">
-						<a href="">home</a>
-					</li>
-					<li class="menu__list-item">
-						<a href="">about us</a>
-					</li>
-					<li class="menu__list-item">
-						<a href="">projects</a>
-					</li>
-					<li class="menu__list-item">
-						<a href="">blog</a>
-					</li>
-					<li class="menu__list-item">
-						<a href="">events</a>
-					</li>
-					<li class="menu__list-item">
-						<a href="">gallery</a>
-					</li>
-					<li class="menu__list-item">
-						<a href="">contact us</a>
-					</li>
-				</ul>
-			</nav>
-		</div>
+			<div class="col-4">
+				<a href="/">
+					<div class="logo"></div>
+				</a>
+			</div>
+			<div class="col-8">
+				<nav class="menu">
+					<ul class="menu__list">
+						<li class="menu__list-item">
+							<a href="">home</a>
+						</li>
+						<li class="menu__list-item">
+							<a href="">about us</a>
+						</li>
+						<li class="menu__list-item">
+							<a href="">projects</a>
+						</li>
+						<li class="menu__list-item">
+							<a href="">blog</a>
+						</li>
+						<li class="menu__list-item">
+							<a href="">events</a>
+						</li>
+						<li class="menu__list-item">
+							<a href="">gallery</a>
+						</li>
+						<li class="menu__list-item">
+							<a href="">contact us</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
 		<div class="feedback">
+			<div class="col-8">
+				<div class="feedback__signup">
+					<div class="signup__headline">Sign up to newsletter</div>
+					<form class="feedback__form">
+						<input type="text" class="feedback__form-input_text" placeholder="Enter your email">
+						<button class="feedback__form-submit">Subscribe</button>
+					</form>
+					<p class="feedback__signup-text">Lorem Ipsum is simply dummy text of the printing and typeset
+ing industry. Lorem Ipsum has been the industry's standard dummy text</p>
+				</div>
+				<img class="feedback__signup-background" src="img/grass.jpg" alt="">
+			</div>
+			<div class="col-4">
+				<a href="" class="feedback__facebook">
+					<div class="facebook-logo">
+						<i class="fa fa-facebook"></i>
+					</div>
+					<p class="facebook-caption">Like now!</p>
+				</a>
+				<img src="img/leaves.jpg" alt="" class="feedback__facebook-background">
+			</div>
+		</div>
+		<!--<div class="feedback">
 			<div class="feedback__left">
 				<div class="feedback__signup">
 					<div class="signup__headline">Sign up to newsletter</div>
@@ -99,8 +125,7 @@ ing industry. Lorem Ipsum has been the industry's standard dummy text</p>
 					<p class="facebook-caption">Like now!</p>
 				</a>
 			</div>
-		</div>
-		<div class="container">
+		</div>-->
 			<div class="events-block">
 				<div class="events__headline">Our Events</div>
 				<a class="event">
