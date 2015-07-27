@@ -27,45 +27,49 @@
 	<link rel="stylesheet" href="font-awesome.min.css">
 	<link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css" />
 	<link rel="stylesheet" href="style.css">
+	<script src="modernizr-2.8.3.js"></script>
 </head>
 <body>
+	<div class="outdated-browser">Вы используете устаревший браузер</div>
 	<div class="wrapper">
 		<div class="container">
-			<div class="col-4">
-				<a href="/">
-					<div class="logo"></div>
-				</a>
-			</div>
-			<div class="col-8">
-				<nav class="menu">
-					<ul class="menu__list">
-						<li class="menu__list-item">
-							<a href="">home</a>
-						</li>
-						<li class="menu__list-item">
-							<a href="">about us</a>
-						</li>
-						<li class="menu__list-item">
-							<a href="">projects</a>
-						</li>
-						<li class="menu__list-item">
-							<a href="">blog</a>
-						</li>
-						<li class="menu__list-item">
-							<a href="">events</a>
-						</li>
-						<li class="menu__list-item">
-							<a href="">gallery</a>
-						</li>
-						<li class="menu__list-item">
-							<a href="">contact us</a>
-						</li>
-					</ul>
-				</nav>
-			</div>
+			<header>
+				<div class="col-4">
+					<a href="">
+						<div class="logo"></div>
+					</a>
+				</div>
+				<div class="col-8">
+					<nav class="menu">
+						<ul class="menu__list">
+							<li class="menu__list-item active-item">
+								<a href="">home</a>
+							</li>
+							<li class="menu__list-item">
+								<a href="">about us</a>
+							</li>
+							<li class="menu__list-item">
+								<a href="">projects</a>
+							</li>
+							<li class="menu__list-item">
+								<a href="">blog</a>
+							</li>
+							<li class="menu__list-item">
+								<a href="">events</a>
+							</li>
+							<li class="menu__list-item">
+								<a href="">gallery</a>
+							</li>
+							<li class="menu__list-item">
+								<a href="">contact us</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</header>
 		<div class="feedback">
-			<div class="col-8">
-				<div class="feedback__signup">
+			<div class="feedback__signup">
+				<div class="col-9 right">
 					<div class="signup__headline">Sign up to newsletter</div>
 					<form class="feedback__form">
 						<input type="text" class="feedback__form-input_text" placeholder="Enter your email">
@@ -74,90 +78,61 @@
 					<p class="feedback__signup-text">Lorem Ipsum is simply dummy text of the printing and typeset
 ing industry. Lorem Ipsum has been the industry's standard dummy text</p>
 				</div>
-				<img class="feedback__signup-background" src="img/grass.jpg" alt="">
 			</div>
-			<div class="col-4">
-				<a href="" class="feedback__facebook">
-					<div class="facebook-logo">
-						<i class="fa fa-facebook"></i>
+			<div class="feedback__facebook">
+				<a href="" class="feedback__facebook-wrapper">
+					<div class="facebook-logo-wrapper">
+						<div class="facebook-logo">
+							<i class="fa fa-facebook"></i>
+						</div>
 					</div>
-					<p class="facebook-caption">Like now!</p>
 				</a>
-				<img src="img/leaves.jpg" alt="" class="feedback__facebook-background">
 			</div>
+			<a href="" class="feedback__facebook_small">
+				<div class="facebook-logo">
+					<i class="fa fa-facebook"></i>
+				</div>
+			</a>
 		</div>
-		<!--<div class="feedback">
-			<div class="feedback__left">
-				<div class="feedback__signup">
-					<div class="signup__headline">Sign up to newsletter</div>
-					<form class="feedback__form">
-						<input type="text" class="feedback__form-input_text" placeholder="Enter your email">
-						<button class="feedback__form-submit">Subscribe</button>
-					</form>
-					<p class="feedback__signup-text">Lorem Ipsum is simply dummy text of the printing and typeset
-ing industry. Lorem Ipsum has been the industry's standard dummy text</p>
-				<a href="" class="feedback__facebook">
-					<div class="facebook-logo">
-						<i class="fa fa-facebook"></i>
-					</div>
-					<p class="facebook-caption">Like now!</p>
-				</a>
+		<div class="events-block">
+			<div class="events__headline">Our Events</div>
+			<div class="events-wrapper">
+				<div class="col-4">
+					<a class="event">
+						<div class="event__date event__date_day">
+							18
+							<div class="triangle"></div>
+						</div>
+						<div class="event__date event__date_month">October</div>
+						<div class="event__name">Lorem Ipsum is simply</div>
+						<p class="event__description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard unchanged</p>
+						<div class="event__more">more</div>
+					</a>
 				</div>
-				<img src="img/grass.jpg" alt="Grass">
-			</div>
-			<div class="feedback__right">
-				<img src="img/leaves.jpg" alt="Leaves">
-			</div>
-			<div class="feedback_small">
-				<div class="feedback__signup_small">
-					<div class="signup__headline">Sign up to newsletter</div>
-					<form class="feedback__form">
-						<input type="text" class="feedback__form-input_text" placeholder="Enter your email">
-						<button class="feedback__form-submit">Subscribe</button>
-					</form>
-					<p class="feedback__signup-text">Lorem Ipsum is simply dummy text of the printing and typeset
-ing industry. Lorem Ipsum has been the industry's standard dummy text</p>
+				<div class="col-4">
+					<a class="event">
+						<div class="event__date event__date_day">
+							18
+							<div class="triangle"></div>
+						</div>
+						<div class="event__date event__date_month">October</div>
+						<div class="event__name">Lorem Ipsum is simply</div>
+						<p class="event__description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard unchanged</p>
+						<div class="event__more">more</div>
+					</a>
 				</div>
-				<a href="" class="feedback__facebook_small">
-					<div class="facebook-logo">
-						<i class="fa fa-facebook"></i>
-					</div>
-					<p class="facebook-caption">Like now!</p>
-				</a>
-			</div>
-		</div>-->
-			<div class="events-block">
-				<div class="events__headline">Our Events</div>
-				<a class="event">
-					<div class="event__date event__date_day">
-						18
-						<div class="triangle"></div>
-					</div>
-					<div class="event__date event__date_month">October</div>
-					<div class="event__name">Lorem Ipsum is simply</div>
-					<p class="event__description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard unchanged</p>
-					<div class="event__more">more</div>
-				</a>
-				<a class="event">
-					<div class="event__date event__date_day">
-						18
-						<div class="triangle"></div>
-					</div>
-					<div class="event__date event__date_month">October</div>
-					<div class="event__name">Lorem Ipsum is simply</div>
-					<p class="event__description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard unchanged</p>
-					<div class="event__more">more</div>
-				</a>
-				<a class="event">
-					<div class="event__date event__date_day">
-						18
-						<div class="triangle"></div>
-					</div>
-					<div class="event__date event__date_month">October</div>
-					<div class="event__name">Lorem Ipsum is simply</div>
-					<p class="event__description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard unchanged</p>
-					<div class="event__more">more</div>
-				</a>
+				<div class="col-4">
+					<a class="event">
+						<div class="event__date event__date_day">
+							18
+							<div class="triangle"></div>
+						</div>
+						<div class="event__date event__date_month">October</div>
+						<div class="event__name">Lorem Ipsum is simply</div>
+						<p class="event__description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard unchanged</p>
+						<div class="event__more">more</div>
+					</a>
+				</div>
 			</div>
 		</div>
 	</div>
